@@ -5,6 +5,7 @@ body {
 .header {
     background-color: #1f2937;
     display: flex;
+    
 }
 
 .logo {
@@ -13,17 +14,13 @@ body {
     width: 48px;
 }
 
-.left {
-    
-}
-
 .title {
     color: white;
     display: flex;
     margin-top: 32px;
     margin-bottom: 32px;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 48px; 
 }
 
 .description {
@@ -38,21 +35,27 @@ button {
     color: white;
 }
 
+.left {
+    margin-left: 100px;
+}
+
 ul.links {
     list-style: none;
     color: white;
     display: flex;
     gap: 16px;
-    padding: 0;
+    justify-content: flex-end;
+    margin-top: auto;
 }
 
 .pic {
-    width: 100px;
-    height: 100px;
     display: flex;
-    
+    height: 150px;
+    width: 100%;
 }
 
 .right {
-    justify-self: end;
+    flex-direction: column;
+    margin-left: auto;  
+    margin-right: 100px;
 }
