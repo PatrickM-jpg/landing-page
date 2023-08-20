@@ -5,7 +5,8 @@ body {
 .header {
     background-color: #1f2937;
     display: flex;
-    
+    padding: 0 48px;
+    margin-bottom: ;
 }
 
 .logo {
@@ -17,26 +18,28 @@ body {
 .title {
     color: white;
     display: flex;
-    margin-top: 32px;
-    margin-bottom: 32px;
     font-weight: bold;
     font-size: 48px; 
+    
 }
 
 .description {
     color: white;
     display: flex;
-    margin-top: 32px;
-    margin-bottom: 16px;
+    
 }
 
 button {
     background: blue;
     color: white;
+    display: flex;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
 }
 
 .left {
-    margin-left: 100px;
+    
 }
 
 ul.links {
@@ -50,12 +53,11 @@ ul.links {
 
 .pic {
     display: flex;
-    height: 150px;
+    height: 125px;
     width: 100%;
 }
 
 .right {
-    flex-direction: column;
-    margin-left: auto;  
-    margin-right: 100px;
+    margin-left: auto;
+
 }
