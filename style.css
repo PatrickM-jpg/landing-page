@@ -3,61 +3,162 @@ body {
 }
 
 .header {
-    background-color: #1f2937;
+    background-color: #0f1824;
     display: flex;
-    padding: 0 48px;
-    margin-bottom: ;
+    padding: 0px 64px;
+    padding-bottom: 50px;
 }
 
 .logo {
     display: flex;
-    height: 48px;
-    width: 48px;
+    height: 50px;
+    width: 50px;
+    
 }
 
 .title {
-    color: white;
+    color:  white;
     display: flex;
     font-weight: bold;
-    font-size: 48px; 
-    
+    font-size: 42px; 
+    padding: 16px 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .description {
     color: white;
     display: flex;
-    
+    padding-bottom: 12px;
+    padding-right: 36px;
 }
 
 button {
-    background: blue;
+    background: #3882F6;
     color: white;
     display: flex;
-    padding: 0px;
-    border: 0px;
-    margin: 0px;
-}
-
-.left {
+    align-self: flex-start;
+    /* This prevents button outline from stretching */
+    border: 2px solid white;
+    border-radius: 8px;
     
 }
 
-ul.links {
-    list-style: none;
-    color: white;
+.left {
     display: flex;
-    gap: 16px;
-    justify-content: flex-end;
+    flex-direction: column;
+}
+
+
+.links {
+    color: white;
+    list-style: none;
+    display: flex;
     margin-top: auto;
+    gap: 16px;
+    margin-bottom: 40px;
+    margin-top: 0px;
+    justify-content: right;
+    /* This helped keep links all the way to the right while chaning jjf height */
 }
 
 .pic {
+    height: 200px;
+    width: 300px;
     display: flex;
-    height: 125px;
-    width: 100%;
+    margin-left: auto;
+    /* Margin left auto aligned picture with links on right side */
+    border: 3px solid gray;
+    
 }
 
 .right {
+    display: flex;
+    flex-direction: column;
     margin-left: auto;
+    
+}
+
+img {
+    max-height: 100%;
+    /* This removed blank space from underneath JJF and helped flex direction not stretch the picture */
+}
+
+.second-section {
 
 }
+
+.second-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.four-pics {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pic-one {
+   height: 100px;
+   width: 150px;
+   border: solid #3882F6  4px;
+}
+
+.pic-two {
+    height: 100px;
+    width: 150px;
+    border: solid #3882F6  4px;
+}
+
+.pic-three {
+    height: 100px;
+    width: 150px;
+    border: solid #3882F6  4px;
+}
+
+.pic-four {
+    height: 100px;
+    width: 150px;
+    border: solid #3882F6 4px;
+}
+
+img {
+    height: 100%;
+    /* Stretched 4 pics vertically */
+    width: 100%;
+    /* Stretched 4 pics horizontally */
+    /* This also changed imgs on header so I had to re-adjust height and width */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
