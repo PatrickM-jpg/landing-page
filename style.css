@@ -1,5 +1,10 @@
 body {
     margin: 0;
+    background-color: antiquewhite;
+}
+
+button {
+    font-style: italic;
 }
 
 .header {
@@ -13,7 +18,6 @@ body {
     display: flex;
     height: 50px;
     width: 50px;
-    
 }
 
 .title {
@@ -32,7 +36,7 @@ body {
     padding-right: 36px;
 }
 
-button {
+button.click-me {
     background: #3882F6;
     color: white;
     display: flex;
@@ -40,7 +44,7 @@ button {
     /* This prevents button outline from stretching */
     border: 2px solid white;
     border-radius: 8px;
-    
+    margin-top: 10px;
 }
 
 .left {
@@ -50,7 +54,6 @@ button {
 
 
 .links {
-    color: white;
     list-style: none;
     display: flex;
     margin-top: auto;
@@ -61,14 +64,25 @@ button {
     /* This helped keep links all the way to the right while chaning jjf height */
 }
 
+a {
+    color: white;
+}
+
 .pic {
     height: 200px;
     width: 300px;
     display: flex;
+    flex-direction: column;
+    /* Put caption under pic */
     margin-left: auto;
     /* Margin left auto aligned picture with links on right side */
     border: 3px solid gray;
-    
+}
+
+.balaram {
+    text-align: center;
+    margin-top: 8px;
+    color: white;
 }
 
 .right {
@@ -94,7 +108,7 @@ img {
 }
 
 .four-pics {
-    margin: 50px 0px;
+    margin: 40px 0px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -102,25 +116,49 @@ img {
 .pic-one {
    height: 100px;
    width: 150px;
-   border: solid #3882F6  4px;
+   border: solid #3882F6  3px;
+   border-radius: 4px;
+}
+
+.rob {
+    text-align: center;
+    margin-top: 8px;
 }
 
 .pic-two {
     height: 100px;
     width: 150px;
-    border: solid #3882F6  4px;
+    border: solid #3882F6  3px;
+    border-radius: 4px;
+}
+
+.sam {
+    text-align: center;
+    margin-top: 8px;
 }
 
 .pic-three {
     height: 100px;
     width: 150px;
-    border: solid #3882F6  4px;
+    border: solid #3882F6 3px;
+    border-radius: 4px;
+}
+
+.mike {
+    text-align: center;
+    margin-top: 8px;
 }
 
 .pic-four {
     height: 100px;
     width: 150px;
-    border: solid #3882F6 4px;
+    border: solid #3882F6 3px;
+    border-radius: 4px;
+}
+
+.simon {
+    text-align: center;
+    margin-top: 8px;
 }
 
 img {
@@ -130,6 +168,56 @@ img {
     /* Stretched 4 pics horizontally */
     /* This also changed imgs on header so I had to re-adjust height and width */
 }
+
+
+
+.third-section {
+    display: flex;
+    font-size: 30px;
+    background-color: #E5E7EB;
+    font-style:  italic;
+    padding: 12px 100px;
+}
+
+.fourth-section {
+    font-size: 30px;
+    display: flex;
+    border: solid black 2px;
+    color: white;
+    margin: 30px 0px;
+    padding: 10px 10px;
+    background-color: #3882F6;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    font-family: Roboto, sans-serif;
+}
+
+.click-here {
+    border-radius: 10px;
+    border-color: white;
+    background-color: #3882F6;
+    color: white;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background-color: #0f1824;
+    display: flex;
+    /* Footer is flexed so i can add as more stuff and it will fill bottom page white */
+    justify-content: center;
+    padding: 20px 20px;
+    color: white;
+    /* Can add postition absolute, bottom 0 and width 100% for footer to be stable with page is minimized */
+}
+
+a {
+    text-decoration: none;
+}
+
+
 
 
 
